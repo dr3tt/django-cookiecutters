@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "collectstatic": "cd backend && python manage.py collectstatic --clear --no-input && cd .."
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.3",
+    "vite-plugin-vuetify": "^2.0.3"
+  },
+  "dependencies": {
+    "@inertiajs/vue3": "^1.0.15",
+    "@mdi/font": "^7.4.47",
+    "pinia": "^2.1.7",
+    "roboto-fontface": "^0.10.0",
+    "sass": "^1.72.0",
+    "vue": "^3.4.21",
+    "vuetify": "^3.5.11",
+    "webfontloader": "^1.6.28"
+  }
+}

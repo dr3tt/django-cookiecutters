@@ -1,0 +1,7 @@
+asgiref==3.8.1
+Django==4.2.11
+django-environ==0.11.2
+django-js-routes==0.2.0
+django-vite==2.0.2
+inertia-django==0.5.2
+sqlparse==0.4.4

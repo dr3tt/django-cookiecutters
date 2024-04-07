@@ -1,0 +1,21 @@
+{% raw %}
+{% load django_vite %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token }}" />
+    {% vite_hmr_client %}
+    {% vite_asset 'src/main.js' crossorigin="anonymous" %}
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.0.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Allow inertiajs to set page titles -->
+    <!-- <title>Page Title</title> -->
+  </head>
+  <body>
+    {% block inertia %}{% endblock %}
+  </body>
+</html>
+{% endraw %}
